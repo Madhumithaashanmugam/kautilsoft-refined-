@@ -5,7 +5,7 @@ body {
 
 /* HERO SECTION */
 .background-hero {
-  background-image: url("assets/hero-background.jpg");
+  background-image: url("/assets/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ body {
     padding: 1.5rem;
   }
   .background-hero {
-  background-image: url("assets/hero-background.jpg");
+  background-image: url("/assets/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
