@@ -5,7 +5,7 @@ body {
 
 /* HERO SECTION */
 .background-hero {
-  background-image: url("/assets/hero-background.jpg");
+  background-image: url("assets/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -244,7 +244,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 20vh;
   width: 90%;
   position: relative;
   display: flex;
