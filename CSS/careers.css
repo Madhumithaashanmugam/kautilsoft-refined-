@@ -1,0 +1,115 @@
+.careers-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.careers-section .career-header {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.careers-section .career-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.careers-section .career-header p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.careers-section .job-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 18px 20px;
+    transition: 0.3s ease;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.careers-section .job-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.careers-section .card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #003070;
+    margin-bottom: 12px;
+}
+
+.careers-section .card-body {
+    font-size: 1rem;
+    color: #555;
+}
+
+.careers-section .card-body ul {
+    margin-top: 8px;
+    padding-left: 18px;
+}
+
+.careers-section .card-body ul li {
+    margin-bottom: 6px;
+}
+
+.careers-section .submit-btn, 
+.careers-section .gmail-btn {
+    background-color: #003070;
+    color: white;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.careers-section .submit-btn:hover, 
+.careers-section .gmail-btn:hover {
+    background-color: #03214a;
+}
+
+.careers-section .note {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.careers-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 15px 40px;
+}
+
+.careers-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.careers-section .job-card-wrapper {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .careers-section .job-card-wrapper {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .careers-section .job-card-wrapper {
+        flex: 1 1 100%;
+    }
+}

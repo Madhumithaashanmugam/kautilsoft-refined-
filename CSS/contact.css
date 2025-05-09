@@ -1,0 +1,132 @@
+/* Contact Section Styles */
+.contact-section {
+    padding: 40px 0;
+    background-color: #003776;
+    margin-top: 2vh;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.founder-info{
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-card {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Left Side: Contact Info Box */
+.contact-info-box {
+    width: 45%;
+    padding: 20px;
+    margin-top: 15vh;
+    align-items: center;
+}
+
+.contact-info-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #003776;
+    align-items: center;
+}
+
+
+.contact-info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    align-items: center;
+
+}
+
+.contact-info-box strong {
+    font-weight: bold;
+    
+}
+
+
+/* Right Side: Contact Form */
+.contact-form-box {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form-box h2 {
+    font-size: 24px;
+    color: #003776;
+    margin-bottom: 10px;
+}
+
+.contact-form-subtitle {
+    font-size: 16px;
+    color: #003776;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.contact-form-row {
+    margin-bottom: 15px;
+}
+
+.contact-form-name, 
+.contact-form-phone, 
+.contact-form-email, 
+.contact-form-message {
+    width: 90%;
+    padding: 12px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.contact-form-name::placeholder,
+.contact-form-phone::placeholder,
+.contact-form-email::placeholder,
+.contact-form-message::placeholder {
+    color: #bdc3c7;
+}
+
+/* Button Styling */
+.contact-form-submit-btn {
+    padding: 12px 25px;
+    background-color: #003776;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-submit-btn:hover {
+    background-color: #003776;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+        width: 90%;
+    }
+    .contact-info-box {
+    width: 45%;
+    padding: 20px;
+    align-items: center;
+}
+}
