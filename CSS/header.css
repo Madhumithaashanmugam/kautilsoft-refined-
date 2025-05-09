@@ -2,6 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
+  body {
+  overflow-x: hidden;
+}
+
   
   .main-header {
     background-color: #003776;
@@ -78,15 +82,29 @@ body {
 /* Hamburger Icon */
 .hamburger {
     display: none;
-    position: absolute;
-    top: 10px;
-    right: 30px;
     font-size: 24px;
     color: white;
     cursor: pointer;
-    z-index: 1001;
   }
-  
+  /* .hamburger {
+  top: 15px;
+  right: 15px;
+  z-index: 1001;
+} */
+.hamburger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Reduce or change to a smaller value */
+  font-size: 24px;
+  z-index: 1001;
+  max-width: 100%;
+
+}
+
+
+
+
   /* Side Menu */
   .side-menu {
     position: fixed;
@@ -129,6 +147,15 @@ body {
       display: block;
     }
   
+    .hamburger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Reduce or change to a smaller value */
+  font-size: 24px;
+  z-index: 1001;
+}
+
     .navbar {
       display: none;
     }
