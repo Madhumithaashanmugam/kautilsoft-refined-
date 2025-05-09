@@ -58,7 +58,10 @@
 /* Front face */
 .flip-card-front {
   z-index: 2;
+  width: 90%;
 }
+
+
 
 /* Back face */
 .flip-card-back {
