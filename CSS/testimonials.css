@@ -1,0 +1,141 @@
+/* Testimonials Section */
+.testimonials-section {
+  padding: 40px 15px;
+  background: #f9f9f9;
+  text-align: center;
+  overflow-x: hidden;
+  max-width: 1200px;         /* Centered content */
+  margin: 0 auto;            /* Center the section */
+  box-sizing: border-box;
+}
+
+/* Section Title */
+.testimonials-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Swiper Container */
+.swiper {
+  width: 100%;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Swiper Wrapper */
+.testimonials-swiper .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Each Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: auto; /* Let swiper handle the width */
+  box-sizing: border-box;
+}
+
+/* Testimonial Card */
+.testi-item {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid #eee;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  max-width: 100%; /* Responsive within swiper */
+}
+
+.testi-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Client Image */
+.client-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Header Row */
+.testi-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Divider Line */
+.line {
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+/* Testimonial Text */
+.testi-content {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.testi-content strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Star Rating */
+.stars {
+  margin: 10px 0;
+}
+
+/* Prevent Horizontal Scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1023px) {
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .swiper-slide {
+    width: auto;
+  }
+
+  .testi-item {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .swiper-slide {
+    width: auto !important;
+    margin-right: 15px; /* adds space between slides */
+  }
+
+  .testi-item {
+    max-width: 100% !important;
+    min-width: 280px; /* ensures it doesn’t shrink too much */
+  }
+}

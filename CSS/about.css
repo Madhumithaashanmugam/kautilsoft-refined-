@@ -1,45 +1,16 @@
 .kautilsoft-section-wrapper section {
-  padding: 30px 0;
+  padding: 30px 15px;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.7;
 }
 
-.kautilsoft-section-wrapper .section-title {
-  font-size: 40px;
-  font-weight: 700;
-  color: #1a1a1a;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.kautilsoft-section-wrapper .section-subtitle {
-  font-size: 28px;
-  font-weight: 600;
-  color: #003070;
-  color: rgb(0, 0, 0);
-}
-
-.kautilsoft-section-wrapper .about-description,
-.kautilsoft-section-wrapper .what-we-do-description,
-.kautilsoft-section-wrapper .vision-description,
-.kautilsoft-section-wrapper .mission-description {
+/* Subtitle only for "We are KautilSoft" */
+.kautilsoft-section-wrapper .about-description {
   font-size: 18px;
   color: #555;
-}
-
-.kautilsoft-section-wrapper .values-list {
-  list-style-type: decimal;
-  padding-left: 20px;
-}
-
-.kautilsoft-section-wrapper .value-item,
-.kautilsoft-section-wrapper .partner-item,
-.kautilsoft-section-wrapper .stat-item {
-  margin-bottom: 10px; /**our values*/
-  font-size: 17px;
 }
 
 .kautilsoft-section-wrapper .motto-line {
@@ -72,28 +43,12 @@
   margin: 8px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .kautilsoft-section-wrapper .section-title {
-    font-size: 32px;
-  }
-
-  .kautilsoft-section-wrapper .section-subtitle {
-    font-size: 24px;
-    color: rgb(0, 0, 0);
-  }
-
-  .kautilsoft-section-wrapper .about-description,
-  .kautilsoft-section-wrapper .what-we-do-description,
-  .kautilsoft-section-wrapper .vision-description,
-  .kautilsoft-section-wrapper .mission-description {
-    font-size: 16px;
-  }
-}
+Social Icons
 .fas, .fab {
   font-family: "Font Awesome 5 Free", "Font Awesome", sans-serif;
   font-weight: 900;
 }
+
 .social-icon {
   width: 24px;
   height: 24px;
@@ -105,12 +60,14 @@
   transform: scale(1.1);
 }
 
+/* Image Handling */
 .image-item img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Slick Arrow Styling */
 .slick-prev, .slick-next {
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -118,6 +75,8 @@
   padding: 10px;
   font-size: 20px;
   z-index: 1000;
+  position: absolute;
+  transform: translateY(-50%);
 }
 
 .slick-prev {
@@ -128,17 +87,7 @@
   right: 10px;
 }
 
-.slick-prev, .slick-next {
-  position: absolute;
-  transform: translateY(-50%);
-}
-
-
-
-
-
-
-
+/* Card Section */
 .card-section {
   display: flex;
   justify-content: center;
@@ -162,8 +111,8 @@
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
-  object-position: center; /* Centers the image */
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-right {
@@ -195,7 +144,7 @@
   color: white;
 }
 
-
+/* Partners Section */
 .partners-section {
   text-align: center;
   padding: 40px 0;
@@ -220,16 +169,13 @@
   transform: scale(1.05);
 }
 
-/* Responsive handling */
+/* Responsive */
 @media (max-width: 768px) {
   .partner-item img {
     max-width: 120px;
     max-height: 60px;
   }
-}
 
-/* 🌐 Responsive Styles */
-@media (max-width: 768px) {
   .card {
     flex-direction: column;
     width: 90%;
@@ -257,3 +203,212 @@
     font-size: 1rem;
   }
 }
+
+/* Image Overlay Section */
+.image-text-wrapper {
+  position: relative;
+  text-align: left;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 550px;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  color: rgb(85, 85, 85);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.overlay-text h2 {
+  color: #ffffff;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.overlay-text ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.overlay-text ul li {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.overlay-text .italic-text {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.overlay-text h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .overlay-text {
+    top: 5%;
+    left: 3%;
+    width: 94%;
+    padding: 10px;
+  }
+
+  .overlay-text h2 {
+    font-size: 1.8em;
+  }
+
+  .overlay-text ul li {
+    font-size: 0.95em;
+  }
+
+  .overlay-text .italic-text {
+    font-size: 1em;
+  }
+
+  .overlay-text h3 {
+    font-size: 1.2em;
+  }
+
+  .background-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    top: 4%;
+    left: 2%;
+    width: 96%;
+    padding: 8px;
+  }
+
+  .overlay-text h2 {
+    font-size: 1.5em;
+  }
+
+  .overlay-text ul li {
+    font-size: 0.9em;
+  }
+
+  .overlay-text .italic-text {
+    font-size: 0.9em;
+  }
+
+  .overlay-text h3 {
+    font-size: 1em;
+  }
+
+  .background-image {
+    max-height: 200px;
+  }
+}
+
+
+.about-wrapper {
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+/* ======= VALUES CARDS STYLING ======= */
+.values-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-subtitle-values {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.value-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  color: #2d3436;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.value-card strong {
+  color: #003776;
+  font-weight: 600;
+}
+
+.value-card:hover {
+  background-color: #e1e5e9;
+  transform: translateY(-5px);
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-subtitle-values {
+    font-size: 1.8rem;
+  }
+
+  .value-card {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.9rem; /* or any smaller size you prefer */
+  }
+.kautilsoft-section-wrapper .about-description {
+    font-size: 0.9rem;
+  }
+}
+

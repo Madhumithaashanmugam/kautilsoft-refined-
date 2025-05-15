@@ -61,3 +61,34 @@ menuLinks.forEach(link => {
       document.querySelectorAll('.flip-card')[index].classList.remove('flipped');
     });
   });
+
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: false, // Important
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  }
+});

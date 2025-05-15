@@ -102,14 +102,55 @@
     display: flex;
 }
 
-@media (max-width: 991px) {
-    .careers-section .job-card-wrapper {
-        flex: 1 1 calc(50% - 20px);
+@media (max-width: 768px) {
+    .careers-section .career-header {
+        padding: 30px 15px 10px;
     }
-}
 
-@media (max-width: 576px) {
+    .careers-section .career-header h1 {
+        font-size: 2rem;
+    }
+
+    .careers-section .career-header p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .careers-section .container {
+        padding: 20px 10px 30px;
+    }
+
+    .careers-section .row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
     .careers-section .job-card-wrapper {
         flex: 1 1 100%;
+    }
+
+    .careers-section .job-card {
+        padding: 16px 16px;
+    }
+
+    .careers-section .card-title {
+        font-size: 1.4rem;
+    }
+
+    .careers-section .card-body {
+        font-size: 0.95rem;
+    }
+
+    .careers-section .submit-btn,
+    .careers-section .gmail-btn {
+        font-size: 0.95rem;
+        padding: 10px 14px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .careers-section .note {
+        font-size: 0.85rem;
+        padding: 0 10px;
     }
 }

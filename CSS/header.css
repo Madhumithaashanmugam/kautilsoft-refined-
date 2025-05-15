@@ -76,7 +76,8 @@ body {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
+    text-decoration: none;
   }
 
 /* Hamburger Icon */
@@ -183,7 +184,7 @@ body {
     }
   
     .company-text p {
-      font-size: 12px;
+      font-size: 11px;
     }
   
     /* Resize phone number and icon */
@@ -220,7 +221,7 @@ body {
   }
 
   .company-text p {
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .contact-section {
@@ -247,11 +248,11 @@ body {
   }
 
   .company-text h1 {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .company-text p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .contact-section {
@@ -268,11 +269,11 @@ body {
   }
 
   .company-text h1 {
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .company-text p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .contact-section {
@@ -291,11 +292,11 @@ body {
   }
 
   .company-text h1 {
-    font-size: 26px;
+    font-size: 23px;
   }
 
   .company-text p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .contact-section {
@@ -327,5 +328,15 @@ body {
 
   .hamburger {
     flex-shrink: 0;
+  }
+}
+
+.logo {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 27px;
   }
 }

@@ -8,15 +8,24 @@
   <link rel="icon" type="image/png" href="/assets/Kautilsoft Logo.png">
 </head>
 
-  <link rel="stylesheet" href="CSS/header.css" />
-  <link rel="stylesheet" href="CSS/hero.css" />
-  <link rel="stylesheet" href="CSS/about.css" />
-  <link rel="stylesheet" href="CSS/section.css"/>
-  <link rel="stylesheet" href="CSS/careers.css"/>
-  <link rel="stylesheet" href="CSS/contact.css"/>
-  <link rel="stylesheet" href="CSS/footer.css"/>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/section.css"/>
+  <link rel="stylesheet" href="css/careers.css"/>
+  <link rel="stylesheet" href="css/contact.css"/>
+  <link rel="stylesheet" href="css/footer.css"/>
+  <link rel="stylesheet" href="css/testimonials.css"/>
+
+
+<!-- jQuery (required by Slick) -->
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   
-  <!-- Slick CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
@@ -29,6 +38,7 @@
   <!-- Font Awesome CDN link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" id="bootstrap-css" href="css/bootstrap.css" type="text/css" media="all">
 	<link rel="stylesheet" id="awesome-font-css" href="css/font-awesome.css" type="text/css" media="all">
@@ -44,7 +54,8 @@
   <header class="main-header">
     <div class="top-bar">
       <div class="logo-section">
-        <img src="assets/mainLogo.jpg" alt="Logo" class="logo" />
+        <img src="assets/Kautilsoft Logo.png" alt="Logo" class="logo" />
+        <img src="assets/MainLogo3.jpg" alt="Logo" class="logo" />
         <div class="company-text">
           <!-- You can add company title and tagline here -->
         </div>
@@ -65,11 +76,11 @@
 
     <nav class="navbar">
       <ul>
-        <li><a style="color: white;" href="#home"><i class="fas fa-home"></i></a></li>
-        <li><a style="color: white;" href="#about">ABOUT</a></li>
-        <li><a style="color: white;" href="#service">SERVICES</a></li>
-        <li><a style="color: white;" href="#careers">CAREERS</a></li>
-        <li><a style="color: white;" href="#contact">CONTACT</a></li>
+        <li><a style="color: white; text-decoration: none;" href="#home"><i class="fas fa-home"></i></a></li>
+        <li><a style="color: white; text-decoration: none;" href="#about">ABOUT</a></li>
+        <li><a style="color: white; text-decoration: none;" href="#service">SERVICES</a></li>
+        <li><a style="color: white; text-decoration: none;" href="#careers">CAREERS</a></li>
+        <li><a style="color: white; text-decoration: none;" href="#contact">CONTACT</a></li>
         
       </ul>
     </nav>
@@ -91,12 +102,13 @@
     <div class="slide active">
       <h1>Empowering Businesses<br>with Expert Financial Solutions</h1>
       <p style="color: rgb(0, 0, 0);">At KautilSoft, we provide accounting, compliance, audit, and strategic financial planning to help businesses stay ahead.</p>
-      <a href="#" class="cta-btn">GET QUOTE</a>
+<a class="cta-btn" href="#service">GET QUOTE</a>
     </div>
     <div class="slide">
       <h1>Smart Financial Solutions for Every Business</h1>
       <p style="color: rgb(0, 0, 0);">At KautilSoft, we specialize in accounting and financial services that help businesses stay compliant, manage risk, and optimize profits.</p>
-      <a href="#" class="cta-btn">GET QUOTE</a>
+<a class="cta-btn" href="#service">GET QUOTE</a>
+
     </div>
   </div>
 </section>
@@ -168,91 +180,63 @@
 <section id="about" class="about-section">
 
   <h1 class="services-header">ABOUT US</h1>
+<section class="about-wrapper">
+<div class="about-section-heading">
   <h2 class="section-subtitle">We are KautilSoft</h2>
   <p class="about-description">
     We empower startups and MSMEs with seamless, AI-driven financial management solutions.
     Our expertise in accounting, compliance, payroll, and business licensing ensures entrepreneurs can focus on growth while we handle their financial well-being.
     With innovation, integrity, and customer-centricity at our core, we simplify complex financial processes—bringing accuracy, compliance, and peace of mind to every business we serve.
   </p>
-  <div class="ot-socials">
-													<span>Follow us:</span>
+<div class="site-footer-socials" style="display: flex; justify-content: flex-start; gap: 10px; align-items: center;">
+    <a target="_blank" href="https://www.facebook.com/people/KautilSoft/61567539557773/">
+        <img src="assets/Facebook_Logo.png" alt="Facebook" class="site-footer-icon" style="width: 24px; height: 24px;" />
+    </a>
+    <a target="_blank" href="https://www.instagram.com/kautilsoft/">
+        <img src="assets/instagram.png" alt="Instagram" class="site-footer-icon" style="width: 24px; height: 24px;" />
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/kautilsoft-financial-and-accounting-services-16420133a/">
+        <img src="assets/linkedIn.png" alt="LinkedIn" class="site-footer-icon" style="width: 24px; height: 24px;" />
+    </a>
+</div>
 
-                            <a target="_blank" href="https://www.facebook.com/people/KautilSoft/61567539557773/">
-                              <img src="assets/facebook.png" alt="Facebook" class="social-icon" />
-                            </a>
+</div>
 
-                            <a target="_blank" href="https://www.instagram.com/kautilsoft/">
-                              <img src="assets/instagram.png" alt="Instagram" class="social-icon" />
-                            </a>
 
-                            <a target="_blank" href="https://www.linkedin.com/in/kautilsoft-financial-and-accounting-services-16420133a/">
-                              <img src="assets/linkedIn.png" alt="LinkedIn" class="social-icon" />
-                            </a>
 
-												</div>
-</section>
-<section class="wpb_row row-fluid row-full-width row-no-padding">
-  <div class="row">
-    <div class="wpb_column column_container col-sm-12">
-      <div class="column-inner">
-        <div class="wpb_wrapper">
-          <div class="image-carousel">
-            <div>
-              <div class="image-item">
-                <img src="assets/aboutPage1.jpg" alt="">
-              </div>
-            </div>
-
-            <div>
-              <div class="image-item">
-                <img src="assets/aboutPage2.jpg" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="values-section">
+  <h2 class="section-subtitle-values">Our Values</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <strong>Empathy:</strong> Understanding and addressing the unique challenges faced by entrepreneurs.
+    </div>
+    <div class="value-card">
+      <strong>Innovation:</strong> Continuously advancing to deliver cutting-edge solutions that simplify financial management.
+    </div>
+    <div class="value-card">
+      <strong>Integrity:</strong> Maintaining the highest standards of transparency, honesty, and ethical practices in all our actions.
+    </div>
+    <div class="value-card">
+      <strong>Customer-Centricity:</strong> Placing our customers at the core of everything we do, ensuring exceptional service and support.
+    </div>
+    <div class="value-card">
+      <strong>Education:</strong> Empowering business owners with the knowledge and insights needed to make informed financial decisions and achieve their goals.
+    </div>
+    <div class="value-card">
+      <strong>Reliability:</strong> Building trust through consistent, accurate, and dependable services, ensuring peace of mind for every entrepreneur.
     </div>
   </div>
 </section>
 
-					
-
-<section class="what-we-do-section">
-  <h2 class="section-subtitle">What We Do</h2>
-  <p class="what-we-do-description">
-    KautilSoft simplifies financial management for startups and MSMEs with AI-driven accounting, compliance, payroll, and licensing solutions.
-  </p>
+  <section class="what-we-do-section">
+    <h2 class="section-subtitle">What We Do</h2>
+    <p class="what-we-do-description">
+      KautilSoft simplifies financial management for startups and MSMEs with AI-driven accounting, compliance, payroll, and licensing solutions.
+    </p>
+  </section>
 </section>
 
-<section class="vision-section">
-  <h2 class="section-subtitle">Our Vision</h2>
-  <p class="vision-description">
-    To transform financial management for startups and MSMEs with seamless, AI-driven accounting and compliance solutions.
-    At Kautilsoft, we empower entrepreneurs to innovate and grow, ensuring their financial health is expertly managed.
-    By simplifying finances, we foster a thriving community where business dreams become reality.
-  </p>
-</section>
 
-<section class="mission-section">
-  <h2 class="section-subtitle">Our Mission</h2>
-  <p class="mission-description">
-    Our mission is to redefine financial management for startups and MSMEs with intuitive, AI-driven accounting and compliance solutions.
-    We strive to make accounting effortless, offering entrepreneurs the insights and support they need to thrive.
-    At Kautilsoft, your financial well-being is our priority, enabling you to focus on what you do best—innovating and growing your business.
-  </p>
-</section>
-
-<section class="values-section">
-  <h2 class="section-subtitle">Our Values</h2>
-  <ol class="values-list">
-    <li class="value-item"><strong>Empathy:</strong> Understanding and addressing the unique challenges faced by entrepreneurs.</li>
-    <li class="value-item"><strong>Innovation:</strong> Continuously advancing to deliver cutting-edge solutions that simplify financial management.</li>
-    <li class="value-item"><strong>Integrity:</strong> Maintaining the highest standards of transparency, honesty, and ethical practices in all our actions.</li>
-    <li class="value-item"><strong>Customer-Centricity:</strong> Placing our customers at the core of everything we do, ensuring exceptional service and support.</li>
-    <li class="value-item"><strong>Education:</strong> Empowering business owners with the knowledge and insights needed to make informed financial decisions and achieve their goals.</li>
-    <li class="value-item"><strong>Reliability:</strong> Building trust through consistent, accurate, and dependable services, ensuring peace of mind for every entrepreneur.</li>
-  </ol>
-</section>
 
 <section class="card-section">
   <div class="card">
@@ -282,6 +266,9 @@
     <div class="partner-item">
       <img src="assets/SuvitLogo.png" alt="Partner 3 Logo">
     </div>
+    <div class="partner-item">
+      <img style="margin-top: 2vh;" src="assets/razopay.png" alt="Partner 4 Logo">
+    </div>
     <!-- Add more as needed -->
   </div>
 </section>
@@ -306,7 +293,7 @@
 
 <!-- Section  -->
 
-<h2 id="service" class="services-header">Our Services</h2>
+<h2  id="service" class="services-header">Our Services</h2>
 
 
 <section class="services-section">
@@ -578,6 +565,79 @@
     </div>
 </section>
 
+  <h1 class="services-header">TESTIMONIALS</h1>
+
+<section class="testimonials-section">
+  <h2 class="testimonials-title">What Our Clients Say</h2>
+
+  <!-- Swiper Container -->
+  <div class="swiper testimonials-swiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Testimonial 1 -->
+      <div class="swiper-slide testi-item box-shadow-hover">
+        <div class="testi-head">
+          <img width="50" height="50" src="assets/SuvitLogo.png" class="client-img" alt="Suvit Logo">
+          <h5>Hari Shashank</h5>
+        </div>
+        <div class="line"></div>
+        <div class="testi-content">
+          <i class="ion-md-quote"></i>
+          <img width="86" height="12" src="assets/stars.png" class="stars" alt="5 stars">
+          <p><strong>"Stress-Free Tax Returns!"</strong> Filing my income tax returns has never been easier. Kautilsoft Financial and Accounting Services takes care of everything, so I can focus on my work without any worries. Excellent service!</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="swiper-slide testi-item box-shadow-hover">
+        <div class="testi-head">
+          <img width="50" height="50" src="assets/tallyLogo.png" class="client-img" alt="Tally Logo">
+          <h5>Blaze Manufacturers and Designers</h5>
+        </div>
+        <div class="line"></div>
+        <div class="testi-content">
+          <i class="ion-md-quote"></i>
+          <img width="86" height="12" src="assets/stars.png" class="stars" alt="5 stars">
+          <p><strong>"Reliable and Professional!"</strong> As a small business owner, I rely on Kautilsoft Financial and Accounting Services for all my bookkeeping and compliance management.</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="swiper-slide testi-item box-shadow-hover">
+        <div class="testi-head">
+          <img width="50" height="50" src="assets/razopay.png" class="client-img" alt="RazorpayX Logo">
+          <h5>RazorpayX Payroll</h5>
+        </div>
+        <div class="line"></div>
+        <div class="testi-content">
+          <i class="ion-md-quote"></i>
+          <img width="86" height="12" src="assets/stars.png" class="stars" alt="5 stars">
+          <p><strong>"Efficient Payroll Partner!"</strong> Managing salaries and compliance has become hassle-free with Kautilsoft. Their seamless integration and expert support saved us time and money.</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 4 -->
+      <div class="swiper-slide testi-item box-shadow-hover">
+        <div class="testi-head">
+          <img width="50" height="50" src="assets/zoho logo.png" class="client-img" alt="Client Logo">
+          <h5>FinTax Advisors</h5>
+        </div>
+        <div class="line"></div>
+        <div class="testi-content">
+          <i class="ion-md-quote"></i>
+          <img width="86" height="12" src="assets/stars.png" class="stars" alt="5 stars">
+          <p><strong>"Smart Solutions, Great Support!"</strong> We’ve streamlined our client accounting workflows thanks to Kautilsoft. They’re truly transforming how we operate.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</section>
+</div>
+
+
 
 <h2 id="contact" class="services-header">Contact Us</h2>
 <!-- contact-button -->
@@ -590,7 +650,7 @@
                 <p>302, 3rd Floor, SS Arcade,<br>                 
                 Beside 5th Avenue Bakery,<br>                 
                 Sainikpuri, Hyderabad - 500094</p>                 
-                <p><strong>Email:</strong> inklukukalyankumar@kautilsoft.com</p>                 
+                <p><strong>Email:</strong> info@kautilsoft.com</p>                 
                 <p><strong>Phone:</strong> +91 90524 27224</p>             
             </div>              
 
@@ -615,7 +675,8 @@
         </div>     
     </div> 
 </section>
-
+</section>
+</div>
 
 
 <footer class="site-footer">
